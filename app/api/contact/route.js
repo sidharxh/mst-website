@@ -13,7 +13,26 @@ export async function POST(req) {
       );
     }
 
-    // Google Sheets Auth
+    // Check for missing env vars and return specific errors
+    if (!process.env.GOOGLE_CLIENT_EMAIL) {
+      return NextResponse.json(
+        { error: 'Server misconfiguration: GOOGLE_CLIENT_EMAIL is not set.' },
+        { status: 500 }
+      );
+    }
+    if (!process.env.GOOGLE_PRIVATE_KEY) {
+      return NextResponse.json(
+        { error: 'Server misconfiguration: GOOGLE_PRIVATE_KEY is not set.' },
+        { status: 500 }
+      );
+    }
+    if (!process.env.SHEET_ID) {
+      return NextResponse.json(
+        { error: 'Server misconfiguration: SHEET_ID is not set.' },
+        { status: 500 }
+      );
+    }
+
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -23,17 +42,14 @@ export async function POST(req) {
     });
 
     const sheets = google.sheets({ version: 'v4', auth });
-
-    const timestamp = new Date().toLocaleString('en-IN', {
-      timeZone: 'Asia/Kolkata',
-    });
+    const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.SHEET_ID,
       range: 'Contacts!A:F',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
-        values: [[timestamp, name, email, phone || '—', service || '—', message]],
+        values: [[timestamp, name, email, phone || '', service || '', message]],
       },
     });
 
@@ -42,7 +58,7 @@ export async function POST(req) {
   } catch (err) {
     console.error('Contact API error:', err);
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: err.message || 'Internal server error' },
       { status: 500 }
     );
   }
