@@ -2,17 +2,23 @@
    THEME VARIABLES
 ============================================ */
 
-/* MST Brand Theme — White, Navy & Orange */
+/* MST Brand Theme - White, Navy & Orange */
 [data-theme="slate"], :root {
-  --primary:   #FF6B00;
-  --secondary: #1A1A2E;
-  --accent:    #FF8C00;
-  --bg:        #FFFFFF;
-  --surface:   #F4F6F9;
-  --text:      #1A1A2E;
-  --muted:     #5A6270;
-  --border:    #E2E6ED;
+  --primary:    #FF6B00;
+  --secondary:  #1A1A2E;
+  --accent:     #FF8C00;
+  --bg:         #FFFFFF;
+  --surface:    #F4F6F9;
+  --navy:       #1A1A2E;
+  --navy-light: #252D45;
+  --navy-muted: rgba(255,255,255,0.12);
+  --text:       #1A1A2E;
+  --text-light: #FFFFFF;
+  --muted:      #5A6270;
+  --border:     #E2E6ED;
+  --border-navy:#2E3A5C;
 }
+
 
 /* ============================================
    RESET & BASE
@@ -51,6 +57,7 @@ ul {
   list-style: none;
 }
 
+
 /* ============================================
    TYPOGRAPHY
 ============================================ */
@@ -60,6 +67,14 @@ h2 { font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 600; line-height: 1.3; 
 h3 { font-size: clamp(1.2rem, 2vw, 1.75rem); font-weight: 600; }
 h4 { font-size: 1.1rem; font-weight: 600; }
 p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
+
+/* On navy backgrounds, body text should be white */
+.navy-section p  { color: rgba(255, 255, 255, 0.75); }
+.navy-section h1,
+.navy-section h2,
+.navy-section h3,
+.navy-section h4 { color: #FFFFFF; }
+
 
 /* ============================================
    REUSABLE LAYOUT UTILITIES
@@ -74,6 +89,21 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 
 .section {
   padding: 5rem 0;
+}
+
+/* White section (default) */
+.section-white {
+  background: var(--bg);
+}
+
+/* Light grey section (alternating) */
+.section-surface {
+  background: var(--surface);
+}
+
+/* Navy section */
+.section-navy {
+  background: var(--navy);
 }
 
 .section-title {
@@ -91,6 +121,11 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
   margin: 0 auto;
 }
 
+/* Section title on navy background */
+.section-navy .section-title h2 { color: #FFFFFF; }
+.section-navy .section-title p  { color: rgba(255, 255, 255, 0.70); }
+
+
 /* ============================================
    REUSABLE COMPONENTS
 ============================================ */
@@ -106,28 +141,44 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
   transition: all 0.2s ease;
 }
 
+/* Orange CTA — works on both white and navy backgrounds */
 .btn-primary {
   background: var(--primary);
   color: #FFFFFF;
 }
 
 .btn-primary:hover {
-  opacity: 0.85;
+  background: var(--accent);
   transform: translateY(-2px);
 }
 
+/* Navy outline — for white backgrounds */
 .btn-outline {
   background: transparent;
-  border: 2px solid var(--secondary);
-  color: var(--secondary);
+  border: 2px solid var(--navy);
+  color: var(--navy);
 }
 
 .btn-outline:hover {
-  background: var(--secondary);
+  background: var(--navy);
   color: #FFFFFF;
   transform: translateY(-2px);
 }
 
+/* White outline — for navy backgrounds */
+.btn-outline-white {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.btn-outline-white:hover {
+  background: #FFFFFF;
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
+/* Default card — white background sections */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -138,8 +189,38 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
+
+/* Navy card — for use inside navy sections */
+.card-navy {
+  background: var(--navy-light);
+  border: 1px solid var(--border-navy);
+  border-radius: 12px;
+  padding: 2rem;
+  color: #FFFFFF;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-navy:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.30);
+}
+
+.card-navy p { color: rgba(255, 255, 255, 0.70); }
+
+
+/* ============================================
+   ACCENT UTILITIES
+============================================ */
+
+.text-primary  { color: var(--primary); }
+.text-navy     { color: var(--navy); }
+.text-white    { color: #FFFFFF; }
+.bg-navy       { background: var(--navy); }
+.bg-primary    { background: var(--primary); }
+.border-accent { border-color: var(--primary); }
+
 
 /* ============================================
    SCROLLBAR
