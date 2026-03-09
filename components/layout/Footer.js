@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Footer.module.css';
 import siteData from '@/data/siteData.json';
 
@@ -12,7 +13,13 @@ export default function Footer() {
 
           {/* Brand */}
           <div className={styles.brand}>
-            <span className={styles.logoMST}>MST</span>
+            <Image
+              src="/logo.png"
+              alt="Mithila Shail Tech Solutions"
+              height={60}
+              width={60}
+              className={styles.logoImg}
+            />
             <p>Mithila Shail Tech Solutions</p>
             <p className={styles.tagline}>{company.tagline}</p>
           </div>

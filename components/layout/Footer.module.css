@@ -18,14 +18,10 @@
   gap: 0.75rem;
 }
 
-.logoMST {
-  background: var(--primary);
-  color: var(--text);
-  padding: 0.25rem 0.6rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 800;
-  width: fit-content;
+.logoImg {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
 }
 
 .brand p {
