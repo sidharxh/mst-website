@@ -2,49 +2,49 @@
    THEME VARIABLES
 ============================================ */
 
-/* Theme 1: Slate (Default) */
+/* Theme 1: MST Dark (Default) */
 [data-theme="slate"], :root {
-  --primary:    #A8C5DA;
-  --secondary:  #F9C784;
-  --accent:     #B5D5C5;
-  --bg:         #F7F4EF;
-  --surface:    #FFFFFF;
-  --text:       #2D3142;
-  --muted:      #6B7280;
-  --border:     #E5E7EB;
+  --primary:   #FF6B00;
+  --secondary: #F9A825;
+  --accent:    #FF8C00;
+  --bg:        #0F1117;
+  --surface:   #1A1A2E;
+  --text:      #F0F0F0;
+  --muted:     #9CA3AF;
+  --border:    #2D3748;
 }
 
-/* Theme 2: Lavender */
+/* Theme 2: MST Light */
 [data-theme="lavender"] {
-  --primary:    #C3B1E1;
-  --secondary:  #B5EAD7;
-  --accent:     #FFDAC1;
-  --bg:         #FAF8FF;
-  --surface:    #FFFFFF;
-  --text:       #2D2D44;
-  --muted:      #6B7280;
-  --border:     #E5E7EB;
+  --primary:   #FF6B00;
+  --secondary: #F9A825;
+  --accent:    #FF8C00;
+  --bg:        #F7F4EF;
+  --surface:   #FFFFFF;
+  --text:      #1A1A2E;
+  --muted:     #6B7280;
+  --border:    #E5E7EB;
 }
 
-/* Theme 3: Sky */
+/* Theme 3: MST Navy */
 [data-theme="sky"] {
-  --primary:    #AEC6CF;
-  --secondary:  #FFB7C5;
-  --accent:     #F0E68C;
-  --bg:         #F0F8FF;
-  --surface:    #FFFFFF;
-  --text:       #1A2B3C;
-  --muted:      #6B7280;
-  --border:     #E5E7EB;
+  --primary:   #FF6B00;
+  --secondary: #F9A825;
+  --accent:    #FF8C00;
+  --bg:        #0A0E1A;
+  --surface:   #111827;
+  --text:      #E8E8E8;
+  --muted:     #6B7280;
+  --border:    #1F2937;
 }
 
 /* Dark mode — works with all themes */
 [data-mode="dark"] {
-  --bg:         #1A1A2E;
-  --surface:    #16213E;
-  --text:       #E0E0E0;
-  --muted:      #9CA3AF;
-  --border:     #2D3748;
+  --bg:      #0F1117;
+  --surface: #1A1A2E;
+  --text:    #F0F0F0;
+  --muted:   #9CA3AF;
+  --border:  #2D3748;
 }
 
 /* ============================================
@@ -141,7 +141,7 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 
 .btn-primary {
   background: var(--primary);
-  color: var(--text);
+  color: #FFFFFF;
 }
 
 .btn-primary:hover {
@@ -157,6 +157,7 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 
 .btn-outline:hover {
   background: var(--primary);
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
@@ -170,7 +171,7 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
 }
 
 /* ============================================
