@@ -40,7 +40,7 @@ export default function Clients() {
                   <p className={styles.quote}>"{t.quote}"</p>
                   <div className={styles.author}>
                     <strong>{t.name}</strong>
-                    <span>{t.designation}, {t.company}</span>
+                    <span>{t.company}</span>
                   </div>
                 </div>
               ))}
