@@ -12,7 +12,7 @@ export default function About() {
           <span className={styles.label}>Who We Are</span>
           <h2>Built on Trust,<br />Driven by Expertise</h2>
           <p>
-            Mithila Shail Tech Solutions is a Varanasi-based electro-mechanical
+            Mithila Shail Tech Solutions is a Lucknow & NCR-based electro-mechanical
             contractor serving India's leading industrial and infrastructure companies.
           </p>
         </div>
@@ -27,14 +27,14 @@ export default function About() {
               trusted by Fortune 500 companies and large-scale industrial facilities across India.
             </p>
             <p>
-              We specialize in electrical installations, HVAC systems, MEP works, fire fighting,
-              AMC contracts, and civil support — delivering end-to-end project execution
-              with a team of <strong>{company.employees}+ skilled professionals</strong>.
+              We specialize in electrical installations, panel design & supply, HVAC systems,
+              MEP works, fire fighting, AMC contracts, and civil support — delivering
+              end-to-end project execution with a team of <strong>{company.employees}+ skilled professionals</strong>.
             </p>
             <p>
-              Our operational reach spans Uttar Pradesh, Bihar, Delhi NCR, and beyond,
-              with a reputation built on on-time delivery, safety compliance, and
-              long-term client relationships.
+              Headquartered in Lucknow with an office in Noida, our operational reach spans
+              Uttar Pradesh, Bihar, Delhi NCR, and beyond — with a reputation built on
+              on-time delivery, safety compliance, and long-term client relationships.
             </p>
 
             <div className={styles.highlights}>
@@ -43,6 +43,13 @@ export default function About() {
                 <div>
                   <strong>Electrical Works</strong>
                   <p>HT/LT installations, panels, cabling</p>
+                </div>
+              </div>
+              <div className={styles.highlight}>
+                <span className={styles.icon}>🔌</span>
+                <div>
+                  <strong>Panel Works</strong>
+                  <p>Design, supply & installation of control panels</p>
                 </div>
               </div>
               <div className={styles.highlight}>
@@ -57,13 +64,6 @@ export default function About() {
                 <div>
                   <strong>AMC Contracts</strong>
                   <p>Annual maintenance for industrial plants</p>
-                </div>
-              </div>
-              <div className={styles.highlight}>
-                <span className={styles.icon}>🏗️</span>
-                <div>
-                  <strong>Civil & Structural</strong>
-                  <p>Support works, fabrication & erection</p>
                 </div>
               </div>
             </div>
@@ -82,12 +82,12 @@ export default function About() {
                 <span className={styles.infoValue}>{company.contact.address}</span>
               </li>
               <li>
-                <span className={styles.infoLabel}>Team Size</span>
-                <span className={styles.infoValue}>{company.employees}+ Professionals</span>
+                <span className={styles.infoLabel}>NCR Office</span>
+                <span className={styles.infoValue}>Noida, Uttar Pradesh</span>
               </li>
               <li>
-                <span className={styles.infoLabel}>Registration</span>
-                <span className={styles.infoValue}>{company.registration}</span>
+                <span className={styles.infoLabel}>Team Size</span>
+                <span className={styles.infoValue}>{company.employees}+ Professionals</span>
               </li>
               <li>
                 <span className={styles.infoLabel}>PAN</span>

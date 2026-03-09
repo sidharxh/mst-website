@@ -30,18 +30,10 @@
   font-weight: 700;
 }
 
-.logoMST {
-  background: var(--primary);
-  color: var(--text);
-  padding: 0.25rem 0.6rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-.logoFull {
-  font-size: 1rem;
-  color: var(--text);
+.logoImg {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .navLinks {
@@ -137,5 +129,5 @@
 @media (max-width: 768px) {
   .navLinks { display: none; }
   .hamburger { display: block; }
-  .logoFull { display: none; }
+  .logoImg { height: 32px; }
 }

@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Mithila Shail Tech Solutions | Electro-Mechanical Contractors',
   description:
-    'Varanasi-based electro-mechanical contractors delivering electrical, HVAC, fire fighting, MEP and AMC solutions across India.',
+    'Lucknow & NCR-based electro-mechanical contractors delivering electrical, panel works, HVAC, fire fighting, MEP and AMC solutions to industries across India.',
   keywords:
-    'electro-mechanical contractor, HVAC, electrical works, AMC, fire fighting, MEP, Varanasi, UP, India',
+    'electro-mechanical contractor, electrical panel works, HVAC, AMC, fire fighting, MEP, Lucknow, Noida, NCR, UP, India, industrial contractor',
 };
 
 export default function RootLayout({ children }) {

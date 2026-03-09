@@ -29,8 +29,8 @@ export default function Hero() {
           </h1>
           <p>{company.tagline}</p>
           <p className={styles.sub}>
-            Trusted by LG Electronics, Hilti, Sembcorp and more — delivering
-            electrical, mechanical and AMC solutions across India since {company.founded}.
+            Trusted by LG Electronics, Hilti, Schenck Rotec and more — delivering
+            electrical, mechanical and AMC solutions to industries across India since {company.founded}.
           </p>
           <div className={styles.heroCTA}>
             <a href="#contact" className="btn btn-primary">Get a Quote</a>
@@ -38,7 +38,7 @@ export default function Hero() {
           </div>
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statNum}>8+</span>
+              <span className={styles.statNum}>180+</span>
               <span className={styles.statLabel}>Projects Delivered</span>
             </div>
             <div className={styles.stat}>

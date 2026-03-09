@@ -1,130 +1,214 @@
 {
-  "mst": {
-    "company": {
-      "name": "Mithila Shail Tech Solutions",
-      "shortName": "MST",
-      "tagline": "Delivering reliable electro-mechanical solutions across India",
-      "founded": "2018",
-      "employees": "50",
-      "registration": "UDYAM-UP-42-0012345",
-      "pan": "AABCM1234D",
-      "gstin": "09AABCM1234D1Z5",
-      "contact": {
-        "address": "C-473/C Indira Nagar, Lucknow, Uttar Pradesh, India",
-        "phone": ["+91 9452062975"],
-        "email": "mithilashailtech@gmail.com"
-      }
-    },
-    "services": [
-      {
-        "icon": "ELEC",
-        "title": "Electrical Works",
-        "description": "Complete HT/LT electrical installations for industrial and commercial facilities.",
-        "subServices": ["HT/LT Panel Installation", "Cable Laying & Termination", "Transformer Installation", "DG Set Installation"]
-      },
-      {
-        "icon": "HVAC",
-        "title": "HVAC Systems",
-        "description": "Design, supply, installation and commissioning of HVAC systems for all facility types.",
-        "subServices": ["Chiller Plant Setup", "AHU Installation", "Ductwork Fabrication", "VRF/VRV Systems"]
-      },
-      {
-        "icon": "FIRE",
-        "title": "Fire Fighting Systems",
-        "description": "End-to-end fire detection and suppression systems compliant with NBC norms.",
-        "subServices": ["Sprinkler Systems", "Fire Hydrant Network", "FM200 Suppression", "Fire Alarm Panels"]
-      },
-      {
-        "icon": "AMC",
-        "title": "AMC Services",
-        "description": "Annual maintenance contracts for uninterrupted plant and facility operations.",
-        "subServices": ["Electrical AMC", "HVAC AMC", "Plumbing AMC", "Integrated Facility AMC"]
-      },
-      {
-        "icon": "CIVIL",
-        "title": "Civil & Structural",
-        "description": "Civil support works, structural fabrication and erection for industrial projects.",
-        "subServices": ["Equipment Foundations", "Steel Fabrication", "Cable Tray Structures", "Civil Finishing Works"]
-      },
-      {
-        "icon": "MEP",
-        "title": "Plumbing & MEP",
-        "description": "Mechanical, electrical and plumbing works for large-scale industrial facilities.",
-        "subServices": ["Water Supply Systems", "Drainage Networks", "Compressed Air Lines", "MEP Coordination"]
-      }
-    ],
-    "projects": [
-      {
-        "title": "LG Electronics Factory — Electrical & HVAC Installation",
-        "client": "LG Electronics India",
-        "category": "Electrical + HVAC",
-        "status": "Completed",
-        "description": "Complete HT/LT electrical installation and HVAC system for LG's manufacturing facility including panel rooms, cable laying and chiller plant commissioning.",
-        "location": "Greater Noida, UP"
-      },
-      {
-        "title": "Hilti India — AMC & Maintenance Contract",
-        "client": "Hilti India Pvt. Ltd.",
-        "category": "AMC",
-        "status": "Ongoing",
-        "description": "Annual maintenance contract covering electrical systems, HVAC, fire fighting and plumbing for Hilti's regional facility.",
-        "location": "Pune, Maharashtra"
-      },
-      {
-        "title": "Sembcorp — MEP Works",
-        "client": "Sembcorp Industries",
-        "category": "MEP",
-        "status": "Completed",
-        "description": "Full MEP scope including electrical, HVAC, plumbing and fire fighting for an industrial utility building.",
-        "location": "Noida, UP"
-      },
-      {
-        "title": "Industrial Warehouse — Fire Fighting System",
-        "client": "Confidential",
-        "category": "Fire Fighting",
-        "status": "Completed",
-        "description": "Design and installation of complete fire hydrant and sprinkler network for a 1.2 lakh sq ft warehouse.",
-        "location": "Varanasi, UP"
-      },
-      {
-        "title": "Commercial Complex — Integrated MEP",
-        "client": "Local Developer",
-        "category": "MEP",
-        "status": "Ongoing",
-        "description": "Integrated MEP works for a G+8 commercial complex including electrical, HVAC, plumbing and fire fighting.",
-        "location": "Varanasi, UP"
-      },
-      {
-        "title": "Hospital HVAC Upgrade",
-        "client": "Private Hospital Group",
-        "category": "HVAC",
-        "status": "Completed",
-        "description": "HVAC system upgrade for OT, ICU and ward areas including precision AHUs and clean room compliance.",
-        "location": "Lucknow, UP"
-      }
-    ],
-    "clients": [
-      { "icon": "LG",  "name": "LG Electronics India",  "industry": "Consumer Electronics" },
-      { "icon": "HI",  "name": "Hilti India",            "industry": "Construction Tools" },
-      { "icon": "SC",  "name": "Sembcorp Industries",    "industry": "Industrial Utilities" },
-      { "icon": "NT",  "name": "NTPC Limited",           "industry": "Power Generation" },
-      { "icon": "TP",  "name": "Tata Projects",          "industry": "Infrastructure" },
-      { "icon": "LT",  "name": "L&T Construction",       "industry": "EPC Contractor" },
-      { "icon": "UP",  "name": "UP Rajkiya Nirman",      "industry": "Govt. Construction" }
-    ],
-    "testimonials": [
-      {
-        "quote": "MST delivered our HVAC and electrical works on time and within budget. Their team showed great technical depth and professionalism throughout the project.",
-        "name": "Rajesh Sharma",
-        "designation": "Facility Manager",
-        "company": "LG Electronics India"
-      },
-      {
-        "quote": "We have been working with Mithila Shail Tech on our AMC contract for over two years. Their response time and quality of maintenance is consistently excellent.",
-        "name": "Priya Mehta",
-        "designation": "Operations Head",
-        "company": "Hilti India"
-      }
-    ]
-  }
+    "mst": {
+        "company": {
+            "name": "Mithila Shail Tech Solutions",
+            "shortName": "MST",
+            "tagline": "Delivering reliable electro-mechanical solutions across India",
+            "founded": "2018",
+            "employees": "50",
+            "pan": "AABCM1234D",
+            "gstin": "09AABCM1234D1Z5",
+            "contact": {
+                "address": "C-473/C Indira Nagar, Lucknow, Uttar Pradesh, India",
+                "phone": [
+                    "+91 9452062975"
+                ],
+                "email": "mithilashailtech@gmail.com",
+                "offices": [
+                    {
+                        "city": "Lucknow",
+                        "label": "Headquarters",
+                        "address": "C-473/C Indira Nagar, Lucknow, Uttar Pradesh 226016"
+                    },
+                    {
+                        "city": "Noida",
+                        "label": "NCR Office",
+                        "address": "Noida, Uttar Pradesh"
+                    }
+                ]
+            }
+        },
+        "services": [
+            {
+                "icon": "⚡",
+                "title": "Electrical Works",
+                "description": "Complete HT/LT electrical installations for industrial and commercial facilities.",
+                "subServices": [
+                    "HT/LT Panel Installation",
+                    "Cable Laying & Termination",
+                    "Transformer Installation",
+                    "DG Set Installation"
+                ]
+            },
+            {
+                "icon": "🔌",
+                "title": "Electrical Panel Works",
+                "description": "Complete design, supply and installation of industrial electrical panels for demanding environments.",
+                "subServices": [
+                    "LT/HT Control Panels",
+                    "MCC & PCC Panels",
+                    "HVAC & Fire Panels",
+                    "Custom Switchgear Design",
+                    "Panel Retrofitting & Upgrades",
+                    "Thermography-based Panel Maintenance"
+                ]
+            },
+            {
+                "icon": "❄️",
+                "title": "HVAC Systems",
+                "description": "Design, supply, installation and commissioning of HVAC systems for all facility types.",
+                "subServices": [
+                    "Chiller Plant Setup",
+                    "AHU Installation",
+                    "Ductwork Fabrication",
+                    "VRF/VRV Systems"
+                ]
+            },
+            {
+                "icon": "🔥",
+                "title": "Fire Fighting Systems",
+                "description": "End-to-end fire detection and suppression systems compliant with NBC norms.",
+                "subServices": [
+                    "Sprinkler Systems",
+                    "Fire Hydrant Network",
+                    "FM200 Suppression",
+                    "Fire Alarm Panels"
+                ]
+            },
+            {
+                "icon": "🔧",
+                "title": "AMC Services",
+                "description": "Annual maintenance contracts for uninterrupted plant and facility operations.",
+                "subServices": [
+                    "Electrical AMC",
+                    "HVAC AMC",
+                    "Plumbing AMC",
+                    "Integrated Facility AMC"
+                ]
+            },
+            {
+                "icon": "🏗️",
+                "title": "Civil & Structural",
+                "description": "Civil support works, structural fabrication and erection for industrial projects.",
+                "subServices": [
+                    "Equipment Foundations",
+                    "Steel Fabrication",
+                    "Cable Tray Structures",
+                    "Civil Finishing Works"
+                ]
+            },
+            {
+                "icon": "🔩",
+                "title": "Plumbing & MEP",
+                "description": "Mechanical, electrical and plumbing works for large-scale industrial facilities.",
+                "subServices": [
+                    "Water Supply Systems",
+                    "Drainage Networks",
+                    "Compressed Air Lines",
+                    "MEP Coordination"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "title": "LG Electronics Factory — Electrical & HVAC Installation",
+                "client": "LG Electronics India",
+                "category": "Electrical + HVAC",
+                "status": "Completed",
+                "description": "Complete HT/LT electrical installation and HVAC system for LG's manufacturing facility including panel rooms, cable laying and chiller plant commissioning.",
+                "location": "Greater Noida, UP"
+            },
+            {
+                "title": "Hilti India — AMC & Maintenance Contract",
+                "client": "Hilti India Pvt. Ltd.",
+                "category": "AMC",
+                "status": "Ongoing",
+                "description": "Annual maintenance contract covering electrical systems, HVAC, fire fighting and plumbing for Hilti's regional facility.",
+                "location": "Lucknow, UP"
+            },
+            {
+                "title": "Schenck Rotec — Panel Installation",
+                "client": "Schenck Rotec India",
+                "category": "Panel Works",
+                "status": "Completed",
+                "description": "Supply and installation of 20 dock panels and thermography-based panel maintenance for Schenck Rotec's industrial facility.",
+                "location": "Greater Noida, UP"
+            },
+            {
+                "title": "Industrial Warehouse — Fire Fighting System",
+                "client": "Confidential",
+                "category": "Fire Fighting",
+                "status": "Completed",
+                "description": "Design and installation of complete fire hydrant and sprinkler network for a 1.2 lakh sq ft warehouse.",
+                "location": "Noida, UP"
+            },
+            {
+                "title": "Commercial Complex — Integrated MEP",
+                "client": "Local Developer",
+                "category": "MEP",
+                "status": "Ongoing",
+                "description": "Integrated MEP works for a G+8 commercial complex including electrical, HVAC, plumbing and fire fighting.",
+                "location": "Lucknow, UP"
+            },
+            {
+                "title": "Hospital HVAC Upgrade",
+                "client": "Private Hospital Group",
+                "category": "HVAC",
+                "status": "Completed",
+                "description": "HVAC system upgrade for OT, ICU and ward areas including precision AHUs and clean room compliance.",
+                "location": "Lucknow, UP"
+            }
+        ],
+        "clients": [
+            {
+                "icon": "LG",
+                "name": "LG Electronics India",
+                "industry": "Consumer Electronics"
+            },
+            {
+                "icon": "HI",
+                "name": "Hilti India",
+                "industry": "Construction Tools"
+            },
+            {
+                "icon": "SR",
+                "name": "Schenck Rotec India",
+                "industry": "Industrial Machinery"
+            },
+            {
+                "icon": "NT",
+                "name": "NTPC Limited",
+                "industry": "Power Generation"
+            },
+            {
+                "icon": "TP",
+                "name": "Tata Projects",
+                "industry": "Infrastructure"
+            },
+            {
+                "icon": "LT",
+                "name": "L&T Construction",
+                "industry": "EPC Contractor"
+            },
+            {
+                "icon": "UP",
+                "name": "UP Rajkiya Nirman",
+                "industry": "Govt. Construction"
+            }
+        ],
+        "testimonials": [
+            {
+                "quote": "MST delivered our HVAC and electrical works on time and within budget. Their team showed great technical depth and professionalism throughout the project.",
+                "name": "Facility Manager",
+                "designation": "",
+                "company": "LG Electronics India"
+            },
+            {
+                "quote": "We have been working with Mithila Shail Tech on our AMC contract for over two years. Their response time and quality of maintenance is consistently excellent.",
+                "name": "Operations Head",
+                "designation": "",
+                "company": "Hilti India"
+            }
+        ]
+    }
 }

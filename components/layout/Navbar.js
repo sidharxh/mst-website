@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 const themes = ['slate', 'lavender', 'sky'];
@@ -42,8 +43,14 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="/" className={styles.logo}>
-            <span className={styles.logoMST}>MST</span>
-            <span className={styles.logoFull}>Mithila Shail Tech</span>
+            <Image
+              src="/logo.png"
+              alt="Mithila Shail Tech Solutions"
+              height={40}
+              width={120}
+              className={styles.logoImg}
+              priority
+            />
           </a>
 
           {/* Desktop Nav Links */}
