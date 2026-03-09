@@ -10,9 +10,7 @@
             "gstin": "09AABCM1234D1Z5",
             "contact": {
                 "address": "C-473/C Indira Nagar, Lucknow, Uttar Pradesh, India",
-                "phone": [
-                    "+91 9452062975"
-                ],
+                "phone": ["+91 9452062975"],
                 "email": "mithilashailtech@gmail.com",
                 "offices": [
                     {
@@ -111,7 +109,7 @@
         ],
         "projects": [
             {
-                "title": "LG Electronics Factory — Electrical & HVAC Installation",
+                "title": "LG Electronics Factory - Electrical & HVAC Installation",
                 "client": "LG Electronics India",
                 "category": "Electrical + HVAC",
                 "status": "Completed",
@@ -119,7 +117,7 @@
                 "location": "Greater Noida, UP"
             },
             {
-                "title": "Hilti India — AMC & Maintenance Contract",
+                "title": "Hilti India - AMC & Maintenance Contract",
                 "client": "Hilti India Pvt. Ltd.",
                 "category": "AMC",
                 "status": "Ongoing",
@@ -127,7 +125,7 @@
                 "location": "Lucknow, UP"
             },
             {
-                "title": "Schenck Rotec — Panel Installation",
+                "title": "Schenck Rotec - Panel Installation",
                 "client": "Schenck Rotec India",
                 "category": "Panel Works",
                 "status": "Completed",
@@ -135,7 +133,7 @@
                 "location": "Greater Noida, UP"
             },
             {
-                "title": "Industrial Warehouse — Fire Fighting System",
+                "title": "Industrial Warehouse - Fire Fighting System",
                 "client": "Confidential",
                 "category": "Fire Fighting",
                 "status": "Completed",
@@ -143,7 +141,7 @@
                 "location": "Noida, UP"
             },
             {
-                "title": "Commercial Complex — Integrated MEP",
+                "title": "Commercial Complex - Integrated MEP",
                 "client": "Local Developer",
                 "category": "MEP",
                 "status": "Ongoing",
@@ -160,41 +158,13 @@
             }
         ],
         "clients": [
-            {
-                "icon": "LG",
-                "name": "LG Electronics India",
-                "industry": "Consumer Electronics"
-            },
-            {
-                "icon": "HI",
-                "name": "Hilti India",
-                "industry": "Construction Tools"
-            },
-            {
-                "icon": "SR",
-                "name": "Schenck Rotec India",
-                "industry": "Industrial Machinery"
-            },
-            {
-                "icon": "NT",
-                "name": "NTPC Limited",
-                "industry": "Power Generation"
-            },
-            {
-                "icon": "TP",
-                "name": "Tata Projects",
-                "industry": "Infrastructure"
-            },
-            {
-                "icon": "LT",
-                "name": "L&T Construction",
-                "industry": "EPC Contractor"
-            },
-            {
-                "icon": "UP",
-                "name": "UP Rajkiya Nirman",
-                "industry": "Govt. Construction"
-            }
+            { "icon": "LG", "name": "LG Electronics India", "industry": "Consumer Electronics" },
+            { "icon": "HI", "name": "Hilti India", "industry": "Construction Tools" },
+            { "icon": "SR", "name": "Schenck Rotec India", "industry": "Industrial Machinery" },
+            { "icon": "NT", "name": "NTPC Limited", "industry": "Power Generation" },
+            { "icon": "TP", "name": "Tata Projects", "industry": "Infrastructure" },
+            { "icon": "LT", "name": "L&T Construction", "industry": "EPC Contractor" },
+            { "icon": "UP", "name": "UP Rajkiya Nirman", "industry": "Govt. Construction" }
         ],
         "testimonials": [
             {
