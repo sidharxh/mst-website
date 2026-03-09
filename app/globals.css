@@ -229,3 +229,45 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+
+  .card, .card-navy {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
