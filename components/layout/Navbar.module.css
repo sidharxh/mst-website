@@ -26,8 +26,6 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 700;
 }
 
 .logoImg {
@@ -51,54 +49,6 @@
 
 .navLinks a:hover {
   color: var(--text);
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.themeSwitcher {
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-}
-
-.themeBtn {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.themeBtn:hover {
-  transform: scale(1.2);
-}
-
-.activeTheme {
-  border-color: var(--text);
-  transform: scale(1.2);
-}
-
-.themeBtn[data-theme-btn="slate"]    { background: #A8C5DA; }
-.themeBtn[data-theme-btn="lavender"] { background: #C3B1E1; }
-.themeBtn[data-theme-btn="sky"]      { background: #AEC6CF; }
-
-.darkToggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1rem;
-  padding: 0.25rem;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-.darkToggle:hover {
-  background: var(--border);
 }
 
 .hamburger {

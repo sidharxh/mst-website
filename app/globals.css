@@ -2,49 +2,16 @@
    THEME VARIABLES
 ============================================ */
 
-/* Theme 1: MST Dark (Default) */
+/* MST Brand Theme — White, Navy & Orange */
 [data-theme="slate"], :root {
   --primary:   #FF6B00;
-  --secondary: #F9A825;
+  --secondary: #1A1A2E;
   --accent:    #FF8C00;
-  --bg:        #0F1117;
-  --surface:   #1A1A2E;
-  --text:      #F0F0F0;
-  --muted:     #9CA3AF;
-  --border:    #2D3748;
-}
-
-/* Theme 2: MST Light */
-[data-theme="lavender"] {
-  --primary:   #FF6B00;
-  --secondary: #F9A825;
-  --accent:    #FF8C00;
-  --bg:        #F7F4EF;
-  --surface:   #FFFFFF;
+  --bg:        #FFFFFF;
+  --surface:   #F4F6F9;
   --text:      #1A1A2E;
-  --muted:     #6B7280;
-  --border:    #E5E7EB;
-}
-
-/* Theme 3: MST Navy */
-[data-theme="sky"] {
-  --primary:   #FF6B00;
-  --secondary: #F9A825;
-  --accent:    #FF8C00;
-  --bg:        #0A0E1A;
-  --surface:   #111827;
-  --text:      #E8E8E8;
-  --muted:     #6B7280;
-  --border:    #1F2937;
-}
-
-/* Dark mode — works with all themes */
-[data-mode="dark"] {
-  --bg:      #0F1117;
-  --surface: #1A1A2E;
-  --text:    #F0F0F0;
-  --muted:   #9CA3AF;
-  --border:  #2D3748;
+  --muted:     #5A6270;
+  --border:    #E2E6ED;
 }
 
 /* ============================================
@@ -151,12 +118,12 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 
 .btn-outline {
   background: transparent;
-  border: 2px solid var(--primary);
-  color: var(--text);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
 }
 
 .btn-outline:hover {
-  background: var(--primary);
+  background: var(--secondary);
   color: #FFFFFF;
   transform: translateY(-2px);
 }
@@ -171,7 +138,7 @@ p  { font-size: 1rem; line-height: 1.7; color: var(--muted); }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
 }
 
 /* ============================================

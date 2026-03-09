@@ -4,37 +4,15 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './Navbar.module.css';
 
-const themes = ['slate', 'lavender', 'sky'];
-
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState('slate');
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const savedMode = localStorage.getItem('mode') || 'light';
-    const savedTheme = localStorage.getItem('theme') || 'slate';
-    setDarkMode(savedMode === 'dark');
-    setCurrentTheme(savedTheme);
-
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  function toggleDarkMode() {
-    const newMode = darkMode ? 'light' : 'dark';
-    setDarkMode(!darkMode);
-    document.documentElement.setAttribute('data-mode', newMode);
-    localStorage.setItem('mode', newMode);
-  }
-
-  function changeTheme(theme) {
-    setCurrentTheme(theme);
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
@@ -62,35 +40,14 @@ export default function Navbar() {
             <li><a href="#contact">Contact</a></li>
           </ul>
 
-          {/* Controls */}
-          <div className={styles.controls}>
+          {/* Mobile Hamburger */}
+          <button
+            className={styles.hamburger}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? '✕' : '☰'}
+          </button>
 
-            {/* Theme Switcher */}
-            <div className={styles.themeSwitcher}>
-              {themes.map(theme => (
-                <button
-                  key={theme}
-                  className={`${styles.themeBtn} ${currentTheme === theme ? styles.activeTheme : ''}`}
-                  data-theme-btn={theme}
-                  onClick={() => changeTheme(theme)}
-                  title={theme}
-                />
-              ))}
-            </div>
-
-            {/* Dark Mode Toggle */}
-            <button className={styles.darkToggle} onClick={toggleDarkMode} title="Toggle dark mode">
-              {darkMode ? '☀️' : '🌙'}
-            </button>
-
-            {/* Mobile Hamburger */}
-            <button
-              className={styles.hamburger}
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? '✕' : '☰'}
-            </button>
-          </div>
         </div>
 
         {/* Mobile Menu */}
