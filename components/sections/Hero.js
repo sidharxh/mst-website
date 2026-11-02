@@ -22,7 +22,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className="container">
         <div className={styles.heroContent}>
-          <div className={styles.badge}>Electro-Mechanical Experts</div>
+          <div className={styles.badge}>Electrical, Software &amp; AI Services</div>
           <h1>
             Powering India's
             <span className={styles.highlight}> Industrial Growth</span>
@@ -35,6 +35,7 @@ export default function Hero() {
           <div className={styles.heroCTA}>
             <a href="#contact" className="btn btn-primary">Get a Quote</a>
             <a href="#projects" className="btn btn-outline">View Projects</a>
+            <a href="#software-ai" className="btn btn-outline">Explore Software &amp; AI</a>
           </div>
           <div className={styles.stats}>
             <div className={styles.stat}>

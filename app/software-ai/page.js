@@ -1,4 +1,5 @@
 import SoftwareAi from '@/components/sections/SoftwareAi';
+import Contact from '@/components/sections/Contact';
 
 export const metadata = {
   title: 'AI Automation, Software & SEO Services in Lucknow | MST',
@@ -83,6 +84,7 @@ export default function SoftwareAiPage() {
           </div>
         </div>
       </section>
+      <Contact />
     </>
   );
 }

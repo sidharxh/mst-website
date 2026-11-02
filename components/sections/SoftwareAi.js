@@ -70,7 +70,7 @@ export default function SoftwareAi() {
 
         <div className={styles.cta}>
           <p>Have a process to automate or a website to build?</p>
-          <a href="/#contact" className="btn btn-primary">Discuss Your Project</a>
+          <a href="#contact" className="btn btn-primary">Discuss Your Project</a>
         </div>
       </div>
     </section>
