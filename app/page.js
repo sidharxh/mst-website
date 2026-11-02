@@ -1,6 +1,7 @@
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
+import SoftwareAi from '@/components/sections/SoftwareAi';
 import Projects from '@/components/sections/Projects';
 import Clients from '@/components/sections/Clients';
 import Contact from '@/components/sections/Contact';
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <SoftwareAi />
       <Projects />
       <Clients />
       <Contact />

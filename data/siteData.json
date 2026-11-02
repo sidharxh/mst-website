@@ -3,7 +3,7 @@
         "company": {
             "name": "Mithila Shail Tech Solutions",
             "shortName": "MST",
-            "tagline": "Delivering reliable electro-mechanical solutions across India",
+            "tagline": "Delivering reliable electrical and digital solutions across India",
             "founded": "2018",
             "employees": "50",
             "pan": "AABCM1234D",
@@ -106,6 +106,13 @@
                     "MEP Coordination"
                 ]
             }
+        ],
+        "digitalServices": [
+            "Business & Workflow Automation",
+            "AI Automation & Solutions",
+            "Custom Software & Business Tools",
+            "Website Design & Development",
+            "SEO & Local Search"
         ],
         "projects": [
             {

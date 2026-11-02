@@ -35,6 +35,7 @@ export default function Navbar() {
           <ul className={styles.navLinks}>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="/software-ai">Software &amp; AI</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#clients">Clients</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -55,6 +56,7 @@ export default function Navbar() {
           <ul className={styles.mobileMenu}>
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
             <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
+            <li><a href="/software-ai" onClick={() => setMenuOpen(false)}>Software &amp; AI</a></li>
             <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
             <li><a href="#clients" onClick={() => setMenuOpen(false)}>Clients</a></li>
             <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>

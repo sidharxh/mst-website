@@ -124,7 +124,7 @@ export default function Contact() {
                   value={form.service} onChange={handleChange}
                 >
                   <option value="">Select a service</option>
-                  {siteData.mst.services.map((s, i) => (
+                  {[...siteData.mst.services, ...siteData.mst.digitalServices.map((title) => ({ title }))].map((s, i) => (
                     <option key={i} value={s.title}>{s.title}</option>
                   ))}
                 </select>

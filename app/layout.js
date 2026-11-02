@@ -6,11 +6,23 @@ import Footer from '@/components/layout/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Mithila Shail Tech Solutions | Electro-Mechanical Contractors',
+  title: 'Mithila Shail Tech Solutions | Electrical, Software & AI Services',
   description:
-    'Lucknow & NCR-based electro-mechanical contractors delivering electrical, panel works, HVAC, fire fighting, MEP and AMC solutions to industries across India.',
-  keywords:
-    'electro-mechanical contractor, electrical panel works, HVAC, AMC, fire fighting, MEP, Lucknow, Noida, NCR, UP, India, industrial contractor',
+    'Mithila Shail Tech Solutions provides electrical and electro-mechanical contracting, custom software, workflow and AI automation, website development and SEO services in Lucknow, Noida and across India.',
+  keywords: [
+    'electrical contractor Lucknow',
+    'electro-mechanical contractor India',
+    'software development Lucknow',
+    'AI automation services India',
+    'website development Lucknow',
+    'SEO services Lucknow',
+  ],
+  openGraph: {
+    title: 'Mithila Shail Tech Solutions | Electrical, Software & AI Services',
+    description:
+      'Electrical contracting, business software, AI and workflow automation, website development and SEO for businesses across India.',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {
